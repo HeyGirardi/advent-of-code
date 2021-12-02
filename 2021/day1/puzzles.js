@@ -1,7 +1,7 @@
 const fs = require('fs');
-module.exports = { day1 }
+module.exports = { puzzles }
 
-function day1(path = './2021/day1/input.txt') {
+async function puzzles(path = './2021/day1/input.txt') {
     fs.promises.readFile(path, { encoding: 'utf-8' })
         .then((result) => {
             console.log(`Day 1\n`);
